@@ -1,0 +1,38 @@
+@font-face {
+  font-family: workbench;
+  src: url(Workbench-Regular-VariableFont_BLED\,SCAN.ttf);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  font-family: workbench;
+}
+
+canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  width: 100vmin;
+  height: 100vmin;
+  filter: blur(10px) brightness(5);
+}
+
+.timer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  text-align: center;
+  color: black;
+  font-size: 10vmin;
+  z-index: 3;
+  mix-blend-mode: exclusion;
+  filter: invert() drop-shadow(0 0 5px white);
+}
+
+#timer {
+  /* text-shadow: 0 0 10px orange; */
+}
