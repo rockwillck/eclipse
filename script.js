@@ -9,7 +9,7 @@ var targetOffsets = new Array(100).fill(0)
 console.log(offsets)
 function animate() {
   requestAnimationFrame(animate)
-  ctx.fillStyle = "black"
+  ctx.fillStyle = "rgba(0,0,0,0.05)"
   ctx.fillRect(0, 0, canvas.width, canvas.height)
 
   ctx.beginPath()
