@@ -17,7 +17,7 @@ canvas {
   translate: -50% -50%;
   width: 100vmin;
   height: 100vmin;
-  filter: blur(10px) brightness(5);
+  filter: blur(1.5vmin) brightness(5);
 }
 
 .timer {
