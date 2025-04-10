@@ -1,13 +1,13 @@
-@font-face {
-  font-family: workbench;
-  src: url(Workbench-Regular-VariableFont_BLED\,SCAN.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+  --red: #EB0028;
+}
 html {
   height: 100%;
   width: 100%;
-  background-color: black;
-  font-family: workbench;
+  background-color: var(--red);
+  font-family: Inter;
 }
 
 canvas {
@@ -17,7 +17,7 @@ canvas {
   translate: -50% -50%;
   width: 100vmin;
   height: 100vmin;
-  filter: blur(1.5vmin) brightness(5);
+  filter: blur(1.5vmin);
 }
 
 .timer {
@@ -25,14 +25,98 @@ canvas {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  text-align: center;
+  text-align: left;
   color: black;
   font-size: 10vmin;
   z-index: 3;
-  mix-blend-mode: exclusion;
-  filter: invert() drop-shadow(0 0 5px white);
+  background-color: white;
+  border-radius: 100vmin;
+  box-shadow: 0 0 2vmin white,0 0 2vmin white,0 0 2vmin white,0 0 2vmin white;
+  height: 65vmin;
+  width: 65vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer > * {
+  margin: 0;
+}
+#logo {
+  max-width: 90%;
+}
+.content {
+  position: absolute;
+  top: calc(100vh - 15px);
+  background-color: white;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+.c2 {
+  top: 165px;
+}
+h1, h2, h3 {
+  font-weight: 200;
+  margin: 0;
+}
+a {
+  color: black;
 }
 
-#timer {
-  /* text-shadow: 0 0 10px orange; */
+.content > .section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content > .section:nth-child(odd) {
+  justify-content: end;
+  text-align: right;
+}
+.section > * {
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+.section > .text {
+  max-width: 500px;
+}
+.section > .image > img {
+  max-width: 100%;
+  /* border-radius: 3vmin; */
+  border: 1px solid black;
+  filter: grayscale();
+}
+.section > * {
+  padding: 10px;
+}
+
+.banner {
+  position: absolute;
+  top: 15px;
+  width: calc(100% - 30px);
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: white;
+  left: 15px;
+  border-radius: 100vmin;
+  text-align: center;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.manifest {
+  width: 100%;
+  border-top: solid 1px black;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+}
+.manifest > * {
+  margin: 5px;
 }
