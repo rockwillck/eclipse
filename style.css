@@ -93,7 +93,9 @@ a {
 }
 
 .banner {
-  position: absolute;
+  position: fixed;
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   top: 15px;
   width: calc(100% - 30px);
   padding: 0 20px;
@@ -119,4 +121,13 @@ a {
 }
 .manifest > * {
   margin: 5px;
+}
+
+.expenseSheet {
+  width: 100%;
+  height: 430px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px black solid;
 }

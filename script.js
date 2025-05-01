@@ -31,3 +31,28 @@ function animate() {
   frame = (frame + 1) % 5000
 }
 animate()
+
+const sitemap = {
+  "Home": "/",
+  "About": "/about",
+  "Speakers": "/speakers",
+  "Funding": "/funding"
+}
+document.getElementsByClassName("content")[0].innerHTML = `<div class="section">
+      <div class="text">
+      ${Object.keys(sitemap).map(key => `<a href="${sitemap[key]}">${key}</a>`).join(" :: ")}
+      </div>
+    </div>` + document.getElementsByClassName("content")[0].innerHTML + `
+    <br>
+    <h2>Directory</h2>
+    <div class="manifest">
+      ${Object.keys(sitemap).map(key => `<a href="${sitemap[key]}">${key}</a>`).join("")}
+    </div>
+    <br>
+    <footer>
+
+      <small>© <script>document.write(new Date().getFullYear())</script> TEDxCypress Youth. All Rights Reserved. This independent TEDx event is operated under license from TED.</small>
+  
+    </footer>`
+
+document.body.innerHTML += `<div class="banner"><p>Speaker applications are now open until April 27, 2025! <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkpA6MsC7nX0aL6OKK_zbeqqS5j3c-JwLYzb_To-AwTYEMUA/viewform">Apply Here</a></p></div>`
