@@ -21,7 +21,7 @@ document.getElementsByClassName("content")[0].innerHTML = `<div class="section">
   
     </footer>`
 
-document.body.innerHTML += `<div class="banner"><p>Speaker applications are now open until April 27, 2025! <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkpA6MsC7nX0aL6OKK_zbeqqS5j3c-JwLYzb_To-AwTYEMUA/viewform">Apply Here</a></p></div>`
+document.body.innerHTML += `<div class="banner"><p>Speaker applications are now open until May 31, 2025! <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkpA6MsC7nX0aL6OKK_zbeqqS5j3c-JwLYzb_To-AwTYEMUA/viewform">Apply Here</a></p></div>`
 
 const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext("2d")
