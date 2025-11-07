@@ -21,7 +21,7 @@ document.getElementsByClassName("content")[0].innerHTML = `<div class="section">
   
     </footer>`
 
-document.body.innerHTML += `<div class="banner"><p>You can help fund TEDxCypress Youth through our <a href="https://www.gofundme.com/f/help-us-bring-tedx-to-cypress-texas?attribution_id=sl:2588eba5-bee2-409a-be32-684892ae8108&lang=en_US&utm_campaign=man_ss_icons&utm_medium=customer&utm_source=copy_link">GoFundMe</a>.</div>`
+document.body.innerHTML += `<div class="banner"><p>Reserve your FREE seat at TEDxCypress Youth <a href="/register.html">here</a>!</div>`
 
 const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext("2d")

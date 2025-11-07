@@ -158,3 +158,13 @@ a {
 .speaker > div > * {
   margin: 0;
 }
+
+.registerFrame {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  border: 2px solid black;
+}
